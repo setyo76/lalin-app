@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalin App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Lalin App</h1>
+            <p>Dibuat menggunakan HTML, CSS, dan Javascript</p>
+            <hr>
+        </div>
+        <div class="app">
+            <img id="lamp" src="./asset/hijau.png" alt="">
+            <button onclick="merahLamp()">Berhenti</button>
+            <button onclick="kuningLamp()">Siap-siap</button>
+            <button onclick="hijauLamp()">Jalan</button>
+            <button onclick="rusakLamp()">Rusak</button>
+        </div>
+
+    </div>
+
+    <script>
+        function merahLamp(){
+            merah = document.getElementById('lamp');
+            merah.src = "./asset/merah.png";
+        }
+
+        function kuningLamp(){
+            kuning = document.getElementById('lamp');
+            kuning.src = "./asset/kuning.png"
+        }
+
+        function hijauLamp(){
+            merah = document.getElementById('lamp');
+            merah.src = "./asset/hijau.png"
+        }
+
+        function rusakLamp() {
+            rusak = document.getElementById('lamp');
+            rusak.src = "./asset/lamp.gif";
+        }
+    </script>
+</body>
+</html>
